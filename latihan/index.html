@@ -1,0 +1,60 @@
+<html>
+<head>
+    <title>Latihan Bootstrap</title>
+    <link rel="stylesheet" type="text/css" href="style/bootstrap.css">
+    <style>
+        .container-fluid, .kotak-pesan, .form-group{
+            border-style: solid;
+            border-width: 1px;
+            border-color: red;
+            
+        }
+
+        .container-fluid, .kotak-pesan{
+            padding: 40px;
+        }
+
+        h3{
+            text-align: center;
+        }
+
+        .kirim{
+            margin-bottom: 18px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-fluid bg-warning">
+        <h3>Content</h3>
+    </div>
+
+    <div class="container-fluid">
+        <div class="kotak-pesan bg-light">
+            <form>
+                <h3>Kirim Pesan</h3>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nama Lengkap</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Masukkan nama anda.</small>
+                </div>
+                <div class="form-group">
+                        <label for="exampleInputEmail1">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">Masukkan email anda.</small>
+                </div>
+                <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Isikan Pesan Anda</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <button type="submit" class="btn btn-primary kirim">Kirim</button>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert" id="">
+                    <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
